@@ -40,68 +40,10 @@
             animation: float 3s ease-in-out infinite;
         }
 
-        .cat-face {
-            width: 140px;
-            height: 120px;
-            background: #f4a460;
-            border-radius: 50% 50% 45% 45%;
-            position: relative;
-        }
-
-        .cat-ear-left {
-            width: 35px;
-            height: 40px;
-            background: #f4a460;
-            border-radius: 80% 20% 0 0;
-            position: absolute;
-            top: -15px;
-            left: 15px;
-            transform: rotate(-15deg);
-        }
-
-        .cat-ear-right {
-            width: 35px;
-            height: 40px;
-            background: #f4a460;
-            border-radius: 20% 80% 0 0;
-            position: absolute;
-            top: -15px;
-            right: 15px;
-            transform: rotate(15deg);
-        }
-
-        .heart-accessory {
-            width: 30px;
-            height: 30px;
-            background: #ff4d6d;
-            position: absolute;
-            top: -5px;
-            right: 5px;
-            border-radius: 50% 50% 0 50%;
-            transform: rotate(-45deg);
-            z-index: 10;
-        }
-
-        .cat-eyes {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            margin-top: 45px;
-        }
-
-        .eye {
-            width: 8px;
-            height: 8px;
-            background: #2d2d2d;
-            border-radius: 50%;
-        }
-
-        .cat-nose {
-            width: 12px;
-            height: 10px;
-            background: #ffb6c1;
-            border-radius: 50% 50% 50% 50%;
-            margin: 8px auto 0;
+        .character img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .question {
@@ -241,16 +183,7 @@
 <body>
     <div class="container">
         <div class="character">
-            <div class="cat-face">
-                <div class="cat-ear-left"></div>
-                <div class="cat-ear-right"></div>
-                <div class="heart-accessory"></div>
-                <div class="cat-eyes">
-                    <div class="eye"></div>
-                    <div class="eye"></div>
-                </div>
-                <div class="cat-nose"></div>
-            </div>
+            <img src="https://i.imgur.com/5Q5Z5Zp.png" alt="Bubu character" onerror="this.src='https://cdn.jsdelivr.net/gh/Tarikul-Islam-Anik/Animated-Fluent-Emojis@master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png'">
         </div>
         <p class="question">Will you be my valentine?</p>
         <div class="buttons">
@@ -261,7 +194,9 @@
     </div>
 
     <div class="celebration" id="celebration">
-        <div class="celebration-cat">💕</div>
+        <div class="celebration-cat">
+            <img src="https://i.imgur.com/5Q5Z5Zp.png" alt="Happy Bubu" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.src='https://cdn.jsdelivr.net/gh/Tarikul-Islam-Anik/Animated-Fluent-Emojis@master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png'">
+        </div>
         <h2>Yay! You said yes! 🎉</h2>
         <p>I'm so happy! ✨</p>
     </div>
